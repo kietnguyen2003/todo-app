@@ -1,4 +1,4 @@
-# data_visualization
+# Todo app
 
 A new Flutter project.
 
