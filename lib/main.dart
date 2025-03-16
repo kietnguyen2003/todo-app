@@ -1,5 +1,6 @@
 import 'package:data_visualization/models/todo.dart';
 import 'package:data_visualization/pages/todo_filter.dart';
+import 'package:data_visualization/pages/todo_page_state.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 // ignore: depend_on_referenced_packages
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
       ),
-      home: const TodoListPage(filter: TodoFilter.all),
+      home: const TodoPage(),
     );
   }
 }

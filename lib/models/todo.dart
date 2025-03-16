@@ -13,20 +13,17 @@ class Todo {
 
 class TodoState extends ChangeNotifier {
   List<Todo> todos;
-  final FlutterLocalNotificationsPlugin
-  flutterLocalNotificationsPlugin; // Thêm plugin
+  final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin;
 
   TodoState()
     : todos = [],
       flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin() {
-    _initNotifications(); // Khởi tạo notifications
+    _initNotifications();
   }
 
   Future<void> _initNotifications() async {
-    // Khởi tạo timezone
     tz.initializeTimeZones();
 
-    // Cấu hình Android
     const AndroidInitializationSettings initializationSettingsAndroid =
         AndroidInitializationSettings('app_icon');
 
